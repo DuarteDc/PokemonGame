@@ -1,13 +1,14 @@
 <template>
   <div class="pokemon-container">
     <img
+      v-if="!showPokemon"
       :src="imageSrc"
       class="hidden-pokemon"
       alt="pokemon"
     />
 
     <img
-      :v-if="showPokemon"
+      v-else
       :src="imageSrc"
       class="fade-in"
       alt="pokemon"
@@ -39,12 +40,14 @@ export default {
 <style scoped>
 .pokemon-container {
   height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img {
-  height: 200px;
-  position: absolute;
-  right: 32%;
+  max-height: 200px;
+  min-height: 100px;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
