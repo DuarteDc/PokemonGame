@@ -44,7 +44,7 @@ export default {
 }
 
 img {
-  filter: drop-shadow(0px 0px 20px #038ffa);
+  filter: drop-shadow(0px 0px 20px #0091ff);
   
   max-height: 150px;
   min-height: 100px;

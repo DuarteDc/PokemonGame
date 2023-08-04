@@ -8,13 +8,16 @@ const getPokemons = () => {
 }
 
 const getPokemonOptions = async() => {
-    const mixedPokemons = getPokemons().sort(() => Math.random() - 0.5);
-    const res =  await getPokemonNames(mixedPokemons.splice(0, 4));
-    return res;
+    try {        
+        const mixedPokemons = getPokemons().sort(() => Math.random() - 0.5);
+        const res =  await getPokemonNames(mixedPokemons.splice(0, 4));
+        return res;
+    } catch (error) {
+        console.log(error)
+    }
 }
 
 const getPokemonNames = async (pokemons = []) => {
-    console.log('xd')
     return await Promise.all(pokemons.map(async (pokemon) => {
         const { data } = await pokemonApi.get(`${pokemon}`);
         return {

@@ -3,7 +3,7 @@
     <Button 
       v-for="pokemon in pokemons"
       :pokemon="pokemon"
-      :key="pokemon.id"
+      :key="pokemon?.id"
       @handleClick="selectionPokemon"
     />
   </div>
