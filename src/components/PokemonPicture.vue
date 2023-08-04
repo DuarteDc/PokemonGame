@@ -7,11 +7,10 @@
       alt="pokemon"
     />
 
-    <img
-      v-else
-      :src="imageSrc"
-      class="fade-in"
-      alt="pokemon"
+    <img v-else 
+      :src="imageSrc" 
+      class="fade-in" 
+      alt="pokemon" 
     />
   </div>
 </template>
@@ -24,10 +23,10 @@ export default {
       required: true,
     },
     showPokemon: {
-        type: Boolean,
-        required: true,
-        default: false,
-    }
+      type: Boolean,
+      required: true,
+      default: false,
+    },
   },
   computed: {
     imageSrc() {
@@ -39,15 +38,17 @@ export default {
 
 <style scoped>
 .pokemon-container {
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 img {
-  max-height: 200px;
+  filter: drop-shadow(0px 0px 20px #038ffa);
+  
+  max-height: 150px;
   min-height: 100px;
+  height: 8rem;
   user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

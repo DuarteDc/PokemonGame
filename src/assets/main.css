@@ -1,0 +1,41 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-hollow');
+body {
+    font-family: 'Pokemon Solid', sans-serif;
+    background-image: linear-gradient(215deg,
+            hsl(3deg 100% 42%) -1%,
+            hsl(7deg 100% 43%) 2%,
+            hsl(11deg 100% 45%) 6%,
+            hsl(16deg 100% 46%) 10%,
+            hsl(20deg 100% 47%) 14%,
+            hsl(24deg 100% 49%) 18%,
+            hsl(28deg 100% 50%) 22%,
+            hsl(24deg 100% 49%) 26%,
+            hsl(20deg 100% 47%) 31%,
+            hsl(16deg 100% 46%) 35%,
+            hsl(11deg 100% 45%) 39%,
+            hsl(7deg 100% 43%) 43%,
+            hsl(3deg 100% 42%) 48%,
+            hsl(7deg 100% 43%) 52%,
+            hsl(11deg 100% 45%) 56%,
+            hsl(16deg 100% 46%) 61%,
+            hsl(20deg 100% 47%) 65%,
+            hsl(24deg 100% 49%) 69%,
+            hsl(28deg 100% 50%) 74%,
+            hsl(24deg 100% 49%) 78%,
+            hsl(20deg 100% 47%) 82%,
+            hsl(16deg 100% 46%) 87%,
+            hsl(11deg 100% 45%) 91%,
+            hsl(7deg 100% 43%) 96%,
+            hsl(3deg 100% 42%) 100%);
+    background-repeat: no-repeat;
+
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
